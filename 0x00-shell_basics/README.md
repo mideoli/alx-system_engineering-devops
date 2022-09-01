@@ -6,3 +6,4 @@ The 4-listmorefiles script display current directories contents, including hidde
 The 5-listfilesdigitonly display current directory contents and hidden files in long format, with user and group IDs numerically
 The 6-firstdirectory script creates a directory named <code>my_first_directory</code> in the <code>/tmp/</code> directory
 The 7-movethatfile script move the file <code>betty</code> from <code>/tmp/</code> directory to <code>/tmp/my_first_directory</code> directory.
+The 8-firstdelete script deletes the file <code>betty</code> in <code>/tmp/my_first_directory</code>
