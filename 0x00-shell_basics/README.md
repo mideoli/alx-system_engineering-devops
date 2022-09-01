@@ -14,3 +14,4 @@ The 12-file_type script prints the type of the file named <code>iamafile</code>.
 The 13-symbolic_link script creates a symbolic link to <code>/bin/ls</code>, named <code>__ls__</code>. The symbolic link should be created in the current working directory.
 The 14-copy_html script copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.
 The teste script was used to do all the remaining script file, startint from script 8 up to 14
+The 100-lets_move script moves all files beginning with an uppercase letter to the directory <code>/tmp/u</code>.
