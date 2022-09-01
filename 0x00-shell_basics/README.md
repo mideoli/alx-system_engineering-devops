@@ -17,3 +17,18 @@ The teste script was used to do all the remaining script file, startint from scr
 The 100-lets_move script moves all files beginning with an uppercase letter to the directory <code>/tmp/u</code>.
 The 101-clean_emacs script deletes all files in the current working directory that end with the character <code>~</code>
 The 102-tree script creates the following directories: <code>welcome/</code>, <code>welcome/to/</code> and <code>welcome/to/school</code> in the current directory.
+The 103-commas script lists all the files and directories of the current directory, separated by commas (<code>,</code>).
+
+
+
+Directory names should end with a slash (<code>/</code>)
+
+Files and directories starting with a dot (<code>.</code>) should be listed
+
+The listing should be alpha ordered, except for the directories <code>.</code> and <code>..</code> which should be listed at the very beginning
+
+Only digits and letters are used to sort; Digits should come first
+
+You can assume that all the files we will test with will have at least one letter or one digit
+
+The listing should end with a new line
