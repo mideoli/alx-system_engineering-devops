@@ -32,3 +32,4 @@ Only digits and letters are used to sort; Digits should come first
 You can assume that all the files we will test with will have at least one letter or one digit
 
 The listing should end with a new line
+The school.mgc script can be used with the command <code>file</code> to detect <code>School</code> data files. <code>School</code> data files always contain the string <code>SCHOOL<code> at offset 0.
