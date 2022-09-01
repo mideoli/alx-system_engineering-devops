@@ -16,3 +16,4 @@ The 14-copy_html script copies all the HTML files from the current working direc
 The teste script was used to do all the remaining script file, startint from script 8 up to 14
 The 100-lets_move script moves all files beginning with an uppercase letter to the directory <code>/tmp/u</code>.
 The 101-clean_emacs script deletes all files in the current working directory that end with the character <code>~</code>
+The 102-tree script creates the following directories: <code>welcome/</code>, <code>welcome/to/</code> and <code>welcome/to/school</code> in the current directory.
