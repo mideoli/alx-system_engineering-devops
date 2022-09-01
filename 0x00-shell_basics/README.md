@@ -11,3 +11,4 @@ The 9-firstdirdeleteion script deletes the directory <code>my_first_directory</c
 The 10-back script changes the working directory to the previous one <code>(source ./10-back)</code>
 The 11-lists script lists  all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the <code>/boot</code> directory (in this order), in long format.
 The 12-file_type script prints the type of the file named <code>iamafile</code>. The file iamafile will be in the <code>/tmp</code> directory
+The 13-symbolic_link script creates a symbolic link to <code>/bin/ls</code>, named <code>__ls__</code>. The symbolic link should be created in the current working directory.
