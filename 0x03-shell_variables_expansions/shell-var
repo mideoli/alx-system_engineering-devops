@@ -1,0 +1,60 @@
+#!/bin/bash
+
+#task 0
+echo -e "#!/bin/bash\nalias ls='rm *'" > 0-alias
+
+#task 1
+echo -e "#!/bin/bash\necho 'hello $USER'" > 1-hello_you
+
+#task 2
+echo -e "#!/bin/bash\nPATH=$PATH:/action" > 2-path
+
+#task 3
+echo -e "#!/bin/bash\necho $PATH | tr ":" "\n" | wc -l" > 3-paths
+
+#task 4
+echo -e "#!/bin/bash\nprintenv" > 4-global_variables
+
+#task 5
+echo -e "#!/bin/bash\nset | less" > 5-local_variables
+
+#task 6
+echo -e  "#!/bin/bash\nBEST="School"" > 6-create_local_variable
+
+#task 7
+echo -e "#!/bin/bash\nexport BEST="School"" > 7-create_global_variable
+
+#task 8
+echo -e "#!/bin/bash\necho $(($TRUEKNOWLEDGE+128))\n" > 8-true_knoweldge
+
+#task 9
+echo -e "#!/bin/bash\n$(($POWER/$DIVIDE))\n" > 9-divide_and_rule
+
+#task 10
+echo -e "#!/bin/bash\necho $((BREATH**LOVE))\n" > 10-love_exponent_breath
+
+#task 11
+echo -e "#!/bin/bash\necho '$((2#$BINARY))'" > 11-binary_to_decimal
+
+#task 12
+echo -e "#!/bin/bash\necho {a..z}{a..z} | tr ' ' '\n' | grep -v "oo"" > 12-combinations
+
+#task 13
+echo -e "#!/bin/bash\nprintf "%.2f\n" $NUM" > 13-print_float
+
+# task 14
+echo -e "#!/bin/bash\nprintf "%x\n" $DECIMAL" > 100-decimal_to_hexadecimal
+
+#task 15
+echo -e "#!/bin/bash\ntr `echo {a..z} | tr -d ' '` `echo {n..z} $(echo {a..m}) | tr -d ' '` | tr `echo {A..Z} | tr -d ' '` `echo {N..Z} $(echo {A..M}) | tr -d ' '`" > 101-rot13
+
+#task 16
+echo -e "#!/bin/bash\nperl -lne 'print if $. % 2 == 1'" > 102-odd
+
+#task 17
+echo -e "#!/bin/bash\necho $(printf %o $(($((5#$(echo $WATER | tr 'water' '01234'))) + $((5#$(echo $STIR | tr 'stir.' '01234'))))) | tr '01234567' 'behlnort')" > 103-water_and_stir
+
+
+chmod u+x *
+git add .
+git commit -m "add tasks 0 to 17"
