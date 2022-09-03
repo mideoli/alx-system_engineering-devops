@@ -1,0 +1,81 @@
+#!/bin/bash
+#echo -e "#!bin/bash\nprintf "\"(Ôo)\'\n"" > 1-confused_smiley
+
+#task 2
+echo -e "#!/bin/bash\ncat /etc/passwd" > 2-hellofile
+
+#task 3
+echo -e "#!/bin/bash\ncat /etc/passwd /etc/hosts" > 3-twofiles
+
+# task 4
+echo -e "#!/bin/bash\ntail -n 10 /etc/passwd" > 4-lastlines
+
+# task 5
+echo -e "#!/bin/bash\nhead -n 10 /etc/passwd" > 5-firstlines
+
+# task 6
+echo -e "#!/bin/bash\nhead -n 3 iacta | tail -n 1" > 6-third_line
+
+#task 7
+#echo -e "#!/bin/bash\necho -e "Best School\n" > "\*\\\'\"Best School\"\'\\\*$\?\*\*\*\*\*:)"" > 7-file
+
+#task 8
+echo -e "#!/bin/bash\nls -la > ls_cwd_content" > 8-cwd_state
+
+#task 9
+echo -e "#!/bin/bash\ncat iacta | tail -n 1 >> iacta" > 9-duplicate_last_line
+
+# task 10
+echo -e "#!/bin/bash\nfind . -type f -name '*.js' -delete" > 10-no_more_js
+
+# task 11
+echo -e "#!/bin/bash\nfind . -mindepth 1 -type d | wc -l" > 11-directories
+
+#task 12
+echo -e "#!/bin/bash\nls -lt | head -10" > 12-newest_files
+
+#task 13
+echo -e "#!/bin/bash\nsort | uniq -u" > 13-unique
+
+#task 14
+echo -e "#!/bin/bash\ncat /etc/passwd | grep 'root'" > 14-findthatword
+
+#task 15
+echo -e "#!/bin/bash\ncat /etc/passwd | grep -c 'bin'" > 15-countthatword
+
+#task 16
+echo -e "#!/bin/bash\ncat /etc/passwd | grep -A 3 root" > 16-whatsnext
+
+#task 17
+echo -e "#!/bin/bash\ncat /etc/passwd | grep -v 'bin'" > 17-hidethisword
+
+#task 18 
+echo -e "#!/bin/bash\ncat /etc/ssh/sshd_config | grep '^[a-zA-Z]'" > 18-letteronly
+
+#task 19
+echo -e "$!/bin/bash\ntr Ac Ze" > 19-AZ
+
+# task 20
+echo -e "#!/bin/bash\ntr -d 'Cc'" > 20-hiago
+
+#task 21
+echo -e "#!/bin/bash\nrev" > 21-reverse
+
+# task 22
+echo -e "#!/bin/bash\ncut -d: -f1,6 /etc/passwd | sort" > 22-users_and_homes
+
+# task 23
+echo -e "#!/bin/bash\nfind . -empty | rev | cut --delimiter='/' -f1 | rev" > 100-empty_casks
+
+#task 24
+echo -e "#!/bin/bash\nfind -type f -name "*.gif" | rev | cut -d "/" -f 1 | cut -d '.' -f 2- | rev | LC_ALL=C sort -f" > 101-gifs
+
+#task 25
+echo -e "#!/bin/bash\ncut -c1 | tr -d '\n' | sort" > 102-acrostic
+
+#task 26
+echo -e "#!/bin/bash\ncat | tail -n +2 | cut -f1 | sort | uniq -c | sort -nr | head -n11 | rev | cut -d" " -f1 | rev" > 103-the_biggest_fan
+
+chmod u+x *
+git add .
+git commit -m "add task 1 to 26"
